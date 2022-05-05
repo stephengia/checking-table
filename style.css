@@ -1,0 +1,62 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  text-align: center;
+}
+table,
+th,
+td {
+  border: solid black;
+}
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+input {
+  border: none;
+  outline: none;
+  padding: 2px 5px;
+}
+#dvt,
+#type,
+#quantity {
+  width: 100px;
+}
+#inp {
+  width: min-content;
+  position: relative;
+  margin: 50px auto;
+}
+button {
+  position: absolute;
+  background-color: navy;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  padding: 3px 10px;
+  top: 10px;
+  right: 10px;
+  margin-top: 0px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+h2 {
+  margin-bottom: 20px;
+}
+td {
+  padding-top: 2px;
+}
+#out {
+  position: relative;
+  padding: 0px 10px;
+}
+#out_table {
+  margin: 0px auto;
+}
+#ketqua {
+  color: red;
+  margin: -30px 0px 40px;
+}
