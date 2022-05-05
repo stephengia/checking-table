@@ -42,7 +42,7 @@ function addProduct() {
     document.getElementById("type").value = "";
     document.getElementById("use").value = "";
     document.getElementById("dvt").value = "";
-    document.getElementById("quantity").value = "";
+    document.getElementById("quantity").value = "0";
     document.getElementById("date").value = "";
     document.getElementById("price").value = "";
   }
