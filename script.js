@@ -18,7 +18,7 @@ function addProduct() {
   }
   if (n != 0) {
     let c = confirm(
-      "Hoạt chất đã được kê từ trước!\nBạn có chắc chắn muốn thêm vào đơn thuốc không?"
+      "Hoạt chất "+hc+" đã được kê từ trước!\nBạn có chắc chắn muốn thêm vào đơn thuốc không?"
     );
     if (c == true) {
       stt++;
