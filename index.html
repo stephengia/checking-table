@@ -9,10 +9,12 @@
     <script src="script.js" defer></script>
   </head>
   <body>
+
+    <!-- Display input table-->
     <form id="inp" autocomplete="off">
       <h2>Input Table</h2>
       <table id="inp_table">
-        <thead>
+        <thead style="background-color: #02458e;color: white;">
           <td>Tên</td>
           <td>Hoạt chất</td>
           <td>DVT</td>
@@ -43,6 +45,7 @@
           <td><input class="price" id="price" type="number" min="0" /></td>
         </tbody>
       </table>
+      <!--BUTTON-->
       <button
         type="button"
         id="add"
@@ -52,6 +55,8 @@
         Thêm
       </button>
     </form>
+
+    <!-- Display output table-->
     <form action="" id="out">
       <h2>Display Table</h2>
       <table id="out_table">
@@ -69,7 +74,8 @@
         </thead>
         <tbody></tbody>
       </table>
-      <button type="button" onclick="delete_multi()">Xóa</button>
+      <!--BUTTON-->
+      <button style="cursor: pointer" type="button" onclick="delete_multi()">Xóa</button>
     </form>
     <div id="ketqua"></div>
   </body>

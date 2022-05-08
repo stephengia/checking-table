@@ -86,7 +86,7 @@ function rows() {
   var xl = x.rows.length;
   for (var i = 1; i < xl; i++) {
     x.rows[i].onclick = function () {
-      if (this.style.background === "red") {
+      if (this.style.background === "red  ") {
         this.style.background = "transparent";
       } else {
         this.style.background = "red";

@@ -30,6 +30,22 @@ input {
   position: relative;
   margin: 50px auto;
 }
+
+button:hover{
+  text-transform: uppercase;
+  position: absolute;
+  background-color: rgb(37, 52, 138);
+  /*This attribute will circulize the button ??? idk*/
+  border-radius: 10px;
+  margin-bottom: 10px;
+  padding: 3px 10px;
+  top: 10px;
+  right: 10px;
+  margin-top: 0px;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
 button {
   position: absolute;
   background-color: navy;
@@ -57,6 +73,6 @@ td {
   margin: 0px auto;
 }
 #ketqua {
-  color: red;
+  color: rgb(202, 219, 49);
   margin: -45px 0px 40px;
 }
