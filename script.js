@@ -11,17 +11,19 @@ function addProduct() {
   let sl = document.getElementById("quantity").value;
   let price = document.getElementById("price").value;
   let date = document.getElementById("date").value;
+
   for (let i = 1; i < xl; i++) {
     if (x.rows[i].cells[2].innerHTML == hc) {
-      n++;
+      var c = confirm(
+        "Hoạt chất '" +
+          hc +
+          "' đã được kê từ trước!\nBạn có chắc chắn muốn thêm vào không?"
+      );
+      break;
     }
   }
-  if (n != 0) {
-    let c = confirm(
-      "Hoạt chất '" +
-        hc +
-        "' đã được kê từ trước!\nBạn có chắc chắn muốn thêm vào không?"
-    );
+
+  
     if (c == true) {
       stt++;
       let total = sl * Number(price);
@@ -35,7 +37,7 @@ function addProduct() {
       document.getElementById("date").value = "";
       document.getElementById("price").value = "";
     }
-  } else {
+   else {
     stt++;
     let total = sl * Number(price);
     addcart(stt, pname, hc, dvt, use, type, date, sl, price, total);
@@ -48,7 +50,7 @@ function addProduct() {
     document.getElementById("date").value = "";
     document.getElementById("price").value = "";
   }
-}
+
 
 function addcart(stt, pname, hc, dvt, use, type, date, sl, price, total) {
   let cart = document.querySelector("#out_table tbody");
@@ -94,6 +96,8 @@ function rows() {
     };
   }
 }
+
+
 
 function delete_multi() {
   var x = document.getElementById("out_table");
